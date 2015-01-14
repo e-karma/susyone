@@ -25,11 +25,83 @@ $susy: (
 );
 
 html, body {
-  margin: 20px;
+  font-family: Open-Sans;
+  margin: auto;
+}
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+
+img {
+  max-width:100%;
+  height:auto;
 }
 
 main {
   @include span(12);
+}
+
+nav {
+  float: right;
+  li {
+    list-style: none;
+    float: left; 
+    margin-left: 1em;
+    line-height: 2rem;
+  }
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin-top: 5vh;
+  padding-bottom: 1rem;
+  background: rgba(113, 218, 210, 0.8);
+}
+
+.logo {
+  float: left;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.sidebar {
+  margin-top: 5vh;
+  background: rgba(250, 218, 210, 0.8);
+  li {
+    list-style: none;
+    a {
+      color: #666;
+      padding-left: 1rem;
+      line-height: 2;
+      text-decoration: none;
+    }
+  }
+}
+
+.site-header, .site-footer {
+  background: rgba(234, 159, 195, 0.8);
+}
+
+.site-header {
+  a {
+    color: #555; 
+    text-decoration: none;
+  }
+}
+
+.site-footer {
+  margin-top: 5vh;
+}
+
+.widget {
+  background: rgba(240, 150, 113, 0.8);
 }
 
 .wrap {
